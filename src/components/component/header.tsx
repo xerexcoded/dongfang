@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import Link from "next/link"
 import { NavigationMenuLink, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenu } from "@/components/ui/navigation-menu"
 import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@/components/ui/select"
@@ -192,18 +192,4 @@ function DongfangLogo(props: React.DetailedHTMLProps<React.ImgHTMLAttributes<HTM
   )
 }
 
-// function DongfangLogo({ className, ...props }: DongfangLogoProps) {
-//   // Extract any other props you need to pass to the Image component
-//   return (
-//     <div className={className} style={{ position: 'relative', width: 'inherit', height: 'inherit' }}>
-//       <Image
-//         src="/dongfangLogo.png"
-//         alt="Mountain"
-//         layout="fill" // This makes the image fill the parent container
-//         objectFit="contain" // Adjust as needed: 'cover', 'contain', etc.
-//         {...props}
-//       />
-//     </div>
-//   );
-// }
 
