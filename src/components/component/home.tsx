@@ -141,20 +141,17 @@ export default function homepage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <Card className="rounded-lg p-4 lg:p-8">
               <p>
-                "The ambiance at Dong Fang is truly unmatched! 🌟 The food was delightful, and the service was
-                outstanding. Highly recommend the Peking Duck! 🦆🔥"
+                {"The ambiance at Dong Fang is truly unmatched! 🌟 The food was delightful, and the service was outstanding. Highly recommend the Peking Duck! 🦆🔥"}
               </p>
             </Card>
             <Card className="rounded-lg p-4 lg:p-8">
               <p>
-                "A perfect spot for a family dinner! 👨‍👩‍👧‍👦 We had a wonderful time and the kids loved the dumplings.
-                🥟 Will definitely be back! 🙌"
+                {"A perfect spot for a family dinner! 👨‍👩‍👧‍👦 We had a wonderful time and the kids loved the dumplings. 🥟 Will definitely be back! 🙌"}
               </p>
             </Card>
             <Card className="rounded-lg p-4 lg:p-8">
               <p>
-                "Visited for a special occasion and it was a night to remember! 🎉 The staff made sure every detail was
-                perfect. The desserts are a must-try! 🍰🤤"
+                {"Visited for a special occasion and it was a night to remember! 🎉 The staff made sure every detail was perfect. The desserts are a must-try! 🍰🤤"}
               </p>
             </Card>
           </div>
