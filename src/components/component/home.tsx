@@ -7,7 +7,7 @@ export default function homepage() {
       <section
         className="flex items-center justify-center h-screen bg-cover bg-center"
         style={{
-          backgroundImage: "url('/placeholder.svg')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1561394818-699dc5ac3e9e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         }}
       >
         <div className="bg-white bg-opacity-80 rounded-lg p-8">
@@ -23,7 +23,7 @@ export default function homepage() {
             alt="Gallery Image 1"
             className="rounded-lg"
             height="200"
-            src="/placeholder.svg"
+            src="https://images.unsplash.com/photo-1518541355664-6ca16f8aacf5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbmVzZSUyMCUyMGRpc2hlc3xlbnwwfHwwfHx8MA%3D%3D"
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
@@ -34,7 +34,7 @@ export default function homepage() {
             alt="Gallery Image 2"
             className="rounded-lg"
             height="200"
-            src="/placeholder.svg"
+            src="https://images.unsplash.com/photo-1669808118592-d120b3965cd1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8"
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
@@ -45,7 +45,7 @@ export default function homepage() {
             alt="Gallery Image 3"
             className="rounded-lg"
             height="200"
-            src="/placeholder.svg"
+            src="https://images.unsplash.com/photo-1565720490528-48e5be3d6a1f?q=80&w=1969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
@@ -56,7 +56,7 @@ export default function homepage() {
             alt="Gallery Image 4"
             className="rounded-lg"
             height="200"
-            src="/placeholder.svg"
+            src="https://images.unsplash.com/photo-1603255032826-64753c00630b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
@@ -67,7 +67,7 @@ export default function homepage() {
             alt="Gallery Image 5"
             className="rounded-lg"
             height="200"
-            src="/placeholder.svg"
+            src="https://media.istockphoto.com/id/1197753461/photo/mushroom-tofu-and-onion-in-sukiyaki-pot-at-hokkaido-japan.webp?s=2048x2048&w=is&k=20&c=6GzEGgjRP2noBhH7U5vj2umTNzqyIRT9Hn8CnX5amJc="
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
@@ -78,7 +78,7 @@ export default function homepage() {
             alt="Gallery Image 6"
             className="rounded-lg"
             height="200"
-            src="/placeholder.svg"
+            src="https://media.istockphoto.com/id/1281781153/photo/windows.webp?s=2048x2048&w=is&k=20&c=Ib0uneE6D7tmyDWILgUkSu6PdA6uJo5ZWcyMlwsrIDk="
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
@@ -89,7 +89,7 @@ export default function homepage() {
             alt="Gallery Image 7"
             className="rounded-lg"
             height="200"
-            src="/placeholder.svg"
+            src="https://media.istockphoto.com/id/1299557078/photo/delicious-beef-and-vegetables-japanese-dish.webp?s=2048x2048&w=is&k=20&c=DuTyKoeGf2PgqEHetQyjTXAnczz72nCSDCgEQSInHnw="
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
@@ -100,7 +100,7 @@ export default function homepage() {
             alt="Gallery Image 8"
             className="rounded-lg"
             height="200"
-            src="/placeholder.svg"
+            src="https://media.istockphoto.com/id/453780395/photo/chicken-chow-mein.webp?s=2048x2048&w=is&k=20&c=Y36Am4OZnr4xfjCHBCau84dLFnG26lVxJoJUzypgFVc="
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
@@ -124,11 +124,10 @@ export default function homepage() {
                 <br />
                 Saturday - Sunday: 12:00 PM - 11:00 PM
               </p>
-              <p className="mt-4">
+              <p className="mt-4 ">
                 <span className="font-semibold">Directions:</span>
                 <br />
-                We are located near the Lausanne train station, just a short walk from the main entrance. Look for our
-                red awning and lanterns.
+                We are located near the Lausanne train station, just a short walk from the main entrance.
               </p>
             </div>
           </Card>
