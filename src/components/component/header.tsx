@@ -57,7 +57,7 @@ export default function header() {
             <NavigationMenuLink asChild>
               <Link
                 className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-red-100 px-4 py-2 text-sm font-medium transition-colors hover:bg-red-300 hover:text-red-900 focus:bg-red-100 focus:text-red-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-red-100/50 data-[state=open]:bg-red-100/50 dark:bg-red-950 dark:hover:bg-red-800 dark:hover:text-red-50 dark:focus:bg-red-800 dark:focus:text-red-50 dark:data-[active]:bg-red-800/50 dark:data-[state=open]:bg-red-800/50"
-                href="#"
+                href="/"
               >
                 Menu
               </Link>
@@ -76,7 +76,7 @@ export default function header() {
       <div className="ml-auto flex items-center gap-4">
         <Select>
           <SelectTrigger className="text-sm font-medium text-red-300 dark:text-red-400 lg:ml-auto">
-            <SelectValue defaultValue="en" placeholder="Language" />
+            <SelectValue defaultValue="en" placeholder="English" />
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="en">English</SelectItem>
@@ -125,7 +125,7 @@ export default function header() {
               <Link className="flex w-full items-center py-2 text-lg font-semibold" href="#">
                 Full Menu
               </Link>
-              <Link className="flex w-full items-center py-2 text-lg font-semibold" href="#">
+              <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/reservation">
                 Reservation
               </Link>
             </div>
