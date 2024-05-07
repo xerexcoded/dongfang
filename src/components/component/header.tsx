@@ -59,7 +59,7 @@ export default function header() {
                 className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-red-100 px-4 py-2 text-sm font-medium transition-colors hover:bg-red-300 hover:text-red-900 focus:bg-red-100 focus:text-red-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-red-100/50 data-[state=open]:bg-red-100/50 dark:bg-red-950 dark:hover:bg-red-800 dark:hover:text-red-50 dark:focus:bg-red-800 dark:focus:text-red-50 dark:data-[active]:bg-red-800/50 dark:data-[state=open]:bg-red-800/50"
                 href="#"
               >
-                Full Menu
+                Menu
               </Link>
             </NavigationMenuLink>
             <NavigationMenuLink asChild>
