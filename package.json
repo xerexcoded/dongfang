@@ -6,7 +6,8 @@
     "dev": "npx prisma generate && next dev --turbo",
     "build": "npx prisma generate && next build",
     "start": "npx prisma generate && next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npx prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^5.13.0",

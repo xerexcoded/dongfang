@@ -1,6 +1,6 @@
 // app/api/reservations/route.ts
 
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '@prisma/client/edge';
 import { NextRequest, NextResponse } from 'next/server';
 
 const prisma = new PrismaClient();
