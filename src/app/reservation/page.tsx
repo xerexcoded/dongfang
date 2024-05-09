@@ -1,9 +1,44 @@
+"use client"
+
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { JSX, SVGProps } from "react"
+import { FormEvent, JSX, SVGProps } from "react"
 
 export default function reservation() {
+
+    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+
+        const formData = {
+            name: (event.currentTarget.elements.namedItem('name') as HTMLInputElement).value,
+            email: (event.currentTarget.elements.namedItem('email') as HTMLInputElement).value,
+            phone: (event.currentTarget.elements.namedItem('phone') as HTMLInputElement).value,
+            date: (event.currentTarget.elements.namedItem('date') as HTMLInputElement).value,
+            time: (event.currentTarget.elements.namedItem('time') as HTMLInputElement).value,
+            seats: (event.currentTarget.elements.namedItem('seats') as HTMLInputElement).value,
+        };
+
+        try {
+            const response = await fetch('/api/reservations', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                alert('Reservation created successfully!');
+                // Reset form fields or redirect to a success page
+            } else {
+                alert('An error occurred while creating the reservation.');
+            }
+        } catch (error) {
+            console.error('Error creating reservation:', error);
+            alert('An error occurred while creating the reservation.');
+        }
+    };
     return (
         <div
             key="1"
@@ -14,7 +49,7 @@ export default function reservation() {
                     <h2 className="text-2xl font-bold mb-2 text-white">Reserve a Table</h2>
                     <p className="text-gray-200">Book your table at our restaurant</p>
                 </div>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <Label className="block mb-1 text-white" htmlFor="name">
                             Name
