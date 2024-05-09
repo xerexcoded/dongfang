@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "prisma generate && next dev --turbo",
-    "build": "prisma generate && next build",
-    "start": "prisma generate && next start",
+    "dev": "npx prisma generate && next dev --turbo",
+    "build": "npx prisma generate && next build",
+    "start": "npx prisma generate && next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "prisma": "^5.13.0"
   }
 }
