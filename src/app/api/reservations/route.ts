@@ -1,5 +1,6 @@
 // app/api/reservations/route.ts
-
+import { sendEmail } from '@/lib/resendService';
+import { ReservationApprove } from '@/components/emails/ReservationApprove';
 import { PrismaClient } from '@prisma/client';
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -17,7 +18,7 @@ export async function POST(request: NextRequest) {
         reservationTime.setHours(parseInt(hours, 10));
         reservationTime.setMinutes(parseInt(minutes, 10));
         const seatsCount = parseInt(seats, 10);
-        await prisma.reservation.create({
+        const reservation = await prisma.reservation.create({
             data: {
                 name,
                 email,
@@ -27,6 +28,12 @@ export async function POST(request: NextRequest) {
                 seats: seatsCount,
             },
         });
+        // Send email to the restaurant
+        await sendEmail(
+            'arnavbanerjee61@gmail.com',
+            'New Reservation',
+            ReservationApprove({ reservation, approveUrl: "https://dongfang.vercel.app/api/reservations/approve" }) as React.ReactElement,
+        )
 
         return NextResponse.json({ message: 'Reservation created successfully!' }, { status: 200 });
     } catch (error) {
