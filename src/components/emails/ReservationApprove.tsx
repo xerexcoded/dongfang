@@ -1,7 +1,6 @@
 import { Html } from '@react-email/html';
 import { Text } from '@react-email/text';
 import { Section } from '@react-email/section';
-import { Tailwind, Button } from "@react-email/components";
 interface ReservationApproveProps {
     reservation: {
         id: number;
@@ -41,6 +40,7 @@ export const ReservationApprove: React.FC<ReservationApproveProps> = ({ reservat
 
             <Section>
                 <Text>A new reservation has been made:</Text>
+                <Text>ID: {reservation.id}</Text>
                 <Text>Name: {reservation.name}</Text>
                 <Text>Email: {reservation.email}</Text>
                 <Text>Phone: {reservation.phone}</Text>
