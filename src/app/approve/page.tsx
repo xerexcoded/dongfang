@@ -1,15 +1,16 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 const page = () => {
-
+    const [reservationId, setReservationId] = useState('');
     const handleApprove = async () => {
         try {
 
             const response = await fetch('/api/reservations/approve', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ reservationId: 5 }),
+                body: JSON.stringify({ reservationId: parseInt(reservationId, 10) }),
             });
 
             if (response.ok) {
@@ -31,6 +32,8 @@ const page = () => {
                     </p>
                 </div>
                 <div className="flex justify-center">
+                    <Input placeholder="Enter reservation ID" value={reservationId}
+                        onChange={(e) => setReservationId(e.target.value)} />
                     <Button onClick={handleApprove}>Approve</Button>
                 </div>
             </div>
