@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
         await sendEmail(
             'arnavbanerjee61@gmail.com',
             'New Reservation',
-            ReservationApprove({ reservation, approveUrl: "https://dongfang.vercel.app/api/reservations/approve" }) as React.ReactElement,
+            ReservationApprove({ reservation, approveUrl: "https://dongfang.vercel.app/approve" }) as React.ReactElement,
         )
 
         return NextResponse.json({ message: 'Reservation created successfully!' }, { status: 200 });
