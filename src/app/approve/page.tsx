@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-const page = () => {
+const ApprovalPage = () => {
     const [reservationId, setReservationId] = useState('');
     const handleApprove = async () => {
         try {
@@ -41,4 +41,4 @@ const page = () => {
     )
 }
 
-export default page
+export default ApprovalPage
