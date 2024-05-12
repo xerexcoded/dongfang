@@ -1,5 +1,5 @@
 "use client"
-
+import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -42,20 +42,55 @@ export default function reservation() {
     return (
         <div
             key="1"
-            className="flex justify-center items-center min-h-screen relative overflow-hidden bg-gradient-to-br from-yellow-200 to-red-300"
+            className="flex flex-col md:flex-row justify-center items-center min-h-screen relative overflow-hidden bg-gradient-to-br from-amber-200 to-orange-400 p-8 gap-6 pt-24"
         >
-            <div className="max-w-md w-full p-6 bg-gradient-to-br from-red-300 to-red-500 rounded-lg shadow-md dark:bg-gradient-to-br dark:from-red-700 dark:to-red-800 z-10">
+            <div className="md:mr-2 w-full md:w-auto md:order-1">
+                <Card className="h-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md">
+                    <CardHeader>
+                        <CardTitle className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
+                            Reservation Process
+                        </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-sm md:text-base text-gray-700 dark:text-gray-300">
+                            After your reservation is confirmed, an email will be sent to you with the details. Our team will ensure
+                            that your table is ready and prepared for your arrival. We look forward to providing you with an
+                            exceptional dining experience.
+                        </p>
+                        <p className="text-sm md:text-base text-gray-700 dark:text-gray-300">
+                            Please note that we have a smart casual dress code, and we kindly request that you arrive on time for your
+                            reservation. If you need to make any changes or have any special requests, please let us know in advance.
+                        </p>
+                        <img
+                            alt="Reservation Process"
+                            height={200}
+                            src="https://images.unsplash.com/photo-1513781050488-6dd358209a1b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpbmVzZXxlbnwwfHwwfHx8MA%3D%3D"
+                            style={{
+                                aspectRatio: "400/300",
+                                borderRadius: "1rem",
+                                display: "block",
+                                marginLeft: "auto",
+                                marginRight: "auto",
+                                objectFit: "cover",
+                                paddingTop: "1rem",
+                            }}
+                            width={300}
+                        />
+                    </CardContent>
+                </Card>
+            </div>
+            <div className="max-w-md w-full p-6 bg-white/30 dark:bg-gray-800/30 backdrop-blur-md rounded-lg shadow-md md:order-1 mb-8 md:mb-0">
                 <div className="text-center mb-6">
-                    <h2 className="text-2xl font-bold mb-2 text-white">Reserve a Table</h2>
-                    <p className="text-gray-200">Book your table at our restaurant</p>
+                    <h2 className="text-2xl font-bold mb-2 text-black">Reserve a Table</h2>
+                    <p className="text-black-200">Book your table at our restaurant</p>
                 </div>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
-                        <Label className="block mb-1 text-white" htmlFor="name">
+                        <Label className="block mb-1 text-gray-900 dark:text-white" htmlFor="name">
                             Name
                         </Label>
                         <Input
-                            className="bg-red-100 dark:bg-red-700 text-gray-800 dark:text-gray-200"
+                            className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
                             id="name"
                             placeholder="Enter your name"
                             required
@@ -63,11 +98,11 @@ export default function reservation() {
                         />
                     </div>
                     <div className="mb-4">
-                        <Label className="block mb-1 text-white" htmlFor="email">
+                        <Label className="block mb-1 text-gray-900 dark:text-white" htmlFor="email">
                             Email
                         </Label>
                         <Input
-                            className="bg-red-100 dark:bg-red-700 text-gray-800 dark:text-gray-200"
+                            className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
                             id="email"
                             placeholder="Enter your email"
                             required
@@ -75,11 +110,11 @@ export default function reservation() {
                         />
                     </div>
                     <div className="mb-4">
-                        <Label className="block mb-1 text-white" htmlFor="phone">
+                        <Label className="block mb-1 text-gray-900 dark:text-white" htmlFor="phone">
                             Phone
                         </Label>
                         <Input
-                            className="bg-red-100 dark:bg-red-700 text-gray-800 dark:text-gray-200"
+                            className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
                             id="phone"
                             placeholder="Enter your phone number"
                             required
@@ -87,33 +122,33 @@ export default function reservation() {
                         />
                     </div>
                     <div className="mb-4">
-                        <Label className="block mb-1 text-white" htmlFor="date">
+                        <Label className="block mb-1 text-gray-900 dark:text-white" htmlFor="date">
                             Date
                         </Label>
                         <Input
-                            className="bg-red-100 dark:bg-red-700 text-gray-800 dark:text-gray-200"
+                            className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
                             id="date"
                             required
                             type="date"
                         />
                     </div>
                     <div className="mb-4">
-                        <Label className="block mb-1 text-white" htmlFor="time">
+                        <Label className="block mb-1 text-gray-900 dark:text-white" htmlFor="time">
                             Time
                         </Label>
                         <Input
-                            className="bg-red-100 dark:bg-red-700 text-gray-800 dark:text-gray-200"
+                            className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
                             id="time"
                             required
                             type="time"
                         />
                     </div>
                     <div className="mb-4">
-                        <Label className="block mb-1 text-white" htmlFor="seats">
+                        <Label className="block mb-1 text-gray-900 dark:text-white" htmlFor="seats">
                             Number of Seats
                         </Label>
                         <Input
-                            className="bg-red-100 dark:bg-red-700 text-gray-800 dark:text-gray-200"
+                            className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
                             id="seats"
                             min="1"
                             placeholder="Enter number of seats"
@@ -123,19 +158,24 @@ export default function reservation() {
                     </div>
                     <div />
                     <Button
-                        className="w-full bg-white text-red-600 hover:bg-red-50 dark:bg-red-900 dark:text-white dark:hover:bg-red-800"
+                        className="w-full bg-amber-900 text-white hover:bg-amber-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
                         type="submit"
                     >
                         Reserve
                     </Button>
                 </form>
                 <div className="mt-6 text-center">
-                    <p className="text-gray-200">Contact us:</p>
+                    <p className="text-gray-600 dark:text-gray-300">Contact us:</p>
                     <div className="flex justify-center gap-4">
-                        <a className="text-white hover:underline" href="#">
+                        <a className="text-amber-900 hover:text-amber-700 dark:text-white dark:hover:text-gray-300" href="#">
                             <MailIcon className="w-6 h-6" />
                         </a>
-                        <a className="text-white hover:underline" href="#" rel="noopener noreferrer" target="_blank">
+                        <a
+                            className="text-amber-900 hover:text-amber-700 dark:text-white dark:hover:text-gray-300"
+                            href="#"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
                             <SmartphoneIcon className="w-6 h-6" />
                         </a>
                     </div>

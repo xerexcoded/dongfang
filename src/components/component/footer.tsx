@@ -21,24 +21,24 @@ import Link from "next/link"
 import { JSX, SVGProps } from "react"
 export default function footer() {
   return (
-    <footer className="bg-[#ffeded] text-gray-900 py-8 md:py-12">
+    <footer className="bg-gradient-to-br from-amber-200 to-orange-400 text-gray-900 py-8 md:py-12">
       <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center mb-4 md:mb-0">
           <Link className="flex items-center" href="#">
             <DongfangLogo className="h-8 w-8 mr-2 text-yellow-500" />
-            <span className="text-xl font-light">Make us a part of your lifestyle</span>
+            <span className="text-xl font-semibold">Make us a part of your lifestyle</span>
           </Link>
         </div>
         <div className="flex items-center space-x-4">
-          <Link className="text-gray-600 hover:text-gray-900" href="#">
+          <Link className="text-amber-600 hover:text-amber-900" href="#">
             <FacebookIcon className="h-6 w-6" />
             <span className="sr-only">Facebook</span>
           </Link>
-          <Link className="text-gray-600 hover:text-gray-900" href="#">
+          <Link className="text-amber-600 hover:text-amber-900" href="#">
             <InstagramIcon className="h-6 w-6" />
             <span className="sr-only">Instagram</span>
           </Link>
-          <Link className="text-gray-600 hover:text-gray-900" href="#">
+          <Link className="text-amber-600 hover:text-amber-900" href="#">
             <TwitterIcon className="h-6 w-6" />
             <span className="sr-only">Twitter</span>
           </Link>
