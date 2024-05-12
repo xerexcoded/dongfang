@@ -35,7 +35,7 @@ export default function homepage() {
                 each dish with love and attention to detail.
               </p>
               <p className="text-lg text-gray-700 mt-4">
-                Today, Dong Fang is more than just a restaurant; it's a place where families and friends come together to
+                Today, Dong Fang is more than just a restaurant; it is a place where families and friends come together to
                 create lasting memories over delicious food and warm company. We invite you to experience the taste of
                 home in every dish and become a part of our story.
               </p>
