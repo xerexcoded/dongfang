@@ -97,7 +97,7 @@ export default function header() {
               <span className="sr-only">Dongfang</span>
             </Link>
             <div className="grid gap-2 py-6">
-              <Link className="flex w-full items-center py-2 text-lg font-semibold" href="#">
+              <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/">
                 Menu
               </Link>
               <Collapsible className="grid gap-4">

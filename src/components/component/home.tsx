@@ -24,12 +24,12 @@ export default function homepage() {
           <Card className="rounded-lg p-2  mx-auto max-w-sm backdrop-blur-sm bg-white/30 ">
             <div>
               <h3 className="text-2xl font-bold mb-4"><img alt="Dong Fang Logo" className="h-8 inline " src="/dongfangLogo.svg" />Our Story</h3>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-700 text-left">
                 <strong>Dong Fang Restaurant was founded in 1990 by the Chen family</strong>, who emigrated from China with a dream of
                 bringing authentic Chinese cuisine to Switzerland. What started as a small family-run establishment
                 quickly <strong>grew into a beloved local favorite, known for its warm hospitality and mouthwatering dishes.</strong>
               </p>
-              <p className="text-lg text-gray-700 mt-4">
+              {/* <p className="text-lg text-gray-700 mt-4">
                 Over the years, Dong Fang has remained true to its roots, using traditional recipes and techniques passed
                 down through generations. Our chefs take pride in sourcing the freshest ingredients and carefully crafting
                 each dish with love and attention to detail.
@@ -38,7 +38,7 @@ export default function homepage() {
                 Today, Dong Fang is more than just a restaurant; it is a place where families and friends come together to
                 create lasting memories over delicious food and warm company. We invite you to experience the taste of
                 home in every dish and become a part of our story.
-              </p>
+              </p> */}
             </div>
           </Card>
           <div className="w-full h-[300px] rounded-lg overflow-hidden">
@@ -47,11 +47,11 @@ export default function homepage() {
         </div>
       </section>
       <section className="px-8 py-12 flex justify-center bg-gradient-to-br from-amber-200 to-orange-400">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800">
           <img
             alt="Gallery Image 1"
             className="rounded-lg opacity-80"
-            height="200"
+            height="300"
             src="https://images.unsplash.com/photo-1518541355664-6ca16f8aacf5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbmVzZSUyMCUyMGRpc2hlc3xlbnwwfHwwfHx8MA%3D%3D"
             style={{
               aspectRatio: "300/200",
@@ -146,13 +146,13 @@ export default function homepage() {
             <div className="w-full h-[300px] rounded-lg overflow-hidden opacity-80">
               <h4 className="text-lg font-semibold mb-2">Our Address 🏠</h4>
               <p>Avenue de la Gare 20 - 1003 Lausanne 🇨🇭</p>
-              <p>Téléphone: 📞 021 312 70 30</p>
+              <p>Téléphone: 📞 <strong>021 312 70 30</strong></p>
               <p className="mt-4">
                 <span className="font-semibold">Opening Hours:</span>
                 <br />
-                Monday - Friday: 11:00 AM - 10:00 PM
+                Monday - Friday: <strong>11:00 AM - 10:00 PM</strong>
                 <br />
-                Saturday - Sunday: 12:00 PM - 11:00 PM
+                Saturday - Sunday: <strong>12:00 PM - 11:00 PM</strong>
               </p>
               <p className="mt-4 ">
                 <span className="font-semibold">Directions:</span>
@@ -161,7 +161,7 @@ export default function homepage() {
               </p>
             </div>
           </Card>
-          <div className="w-full lg:w-[600px] h-[300px] rounded-lg overflow-hidden opacity-80">
+          <div className="w-full  h-[300px] rounded-lg overflow-hidden opacity-80">
             <Map /></div>
 
         </div>
