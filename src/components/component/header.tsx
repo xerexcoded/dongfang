@@ -57,7 +57,7 @@ export default function header() {
             <NavigationMenuLink asChild>
               <Link
                 className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-amber-100 px-4 py-2 text-sm font-medium transition-colors hover:bg-amber-300 hover:text-amber-900 focus:bg-amber-100 focus:text-amber-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-amber-100/50 data-[state=open]:bg-amber-100/50 dark:bg-amber-950 dark:hover:bg-amber-800 dark:hover:text-amber-50 dark:focus:bg-amber-800 dark:focus:text-amber-50 dark:data-[active]:bg-amber-800/50 dark:data-[state=open]:bg-amber-800/50"
-                href="/"
+                href="/menu"
               >
                 Menu
               </Link>
@@ -98,7 +98,7 @@ export default function header() {
             </Link>
             <div className="grid gap-2 py-6">
               <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/">
-                Menu
+                Home
               </Link>
               <Collapsible className="grid gap-4">
                 <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
@@ -122,8 +122,8 @@ export default function header() {
                   </div>
                 </CollapsibleContent>
               </Collapsible>
-              <Link className="flex w-full items-center py-2 text-lg font-semibold" href="#">
-                Full Menu
+              <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/menu">
+                Menu
               </Link>
               <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/reservation">
                 Reservation

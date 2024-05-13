@@ -46,7 +46,9 @@ export default function homepage() {
           </div>
         </div>
       </section>
+
       <section className="px-8 py-12 flex justify-center bg-gradient-to-br from-amber-200 to-orange-400">
+
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800">
           <img
             alt="Gallery Image 1"
@@ -154,7 +156,7 @@ export default function homepage() {
                 <br />
                 Saturday - Sunday: <strong>12:00 PM - 11:00 PM</strong>
               </p>
-              <p className="mt-4 ">
+              <p className="mt-4 mb-4">
                 <span className="font-semibold">Directions:</span>
                 <br />
                 We are located <strong>near the Lausanne train station</strong>, just a short walk from the main entrance.

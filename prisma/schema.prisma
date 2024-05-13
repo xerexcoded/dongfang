@@ -24,3 +24,13 @@ model Reservation {
   seats  Int
   status String   @default("PENDING")
 }
+
+model MenuItem {
+  id          Int    @id @default(autoincrement()) // make it start from 1 always
+  name        String
+  spiceLevel  Int // Assuming spice level is an integer (1-5 for example)
+  dishType    String // e.g., Starter, Main, etc.
+  ingredients String
+  regions     String
+  imageUrl    String // Path to the image in the public folder
+}
