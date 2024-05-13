@@ -4,6 +4,7 @@ import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
 import { SVGProps } from "react"
+import Image from "next/image"
 
 export default function menupage() {
   return (
@@ -258,7 +259,7 @@ export default function menupage() {
         <div className="flex-1 overflow-auto p-6">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div className="relative flex flex-col items-start rounded-lg bg-white/80 p-4 backdrop-blur-lg transition-all hover:scale-105 hover:shadow-lg opacity-80">
-              <img
+              <Image
                 alt="Dish Image"
                 className="mb-4 w-full rounded-lg object-cover"
                 height={200}
@@ -284,7 +285,7 @@ export default function menupage() {
               </div>
             </div>
             <div className="relative flex flex-col items-start rounded-lg bg-white/80 p-4 backdrop-blur-lg transition-all hover:scale-105 hover:shadow-lg opacity-80">
-              <img
+              <Image
                 alt="Dish Image"
                 className="mb-4 w-full rounded-lg object-cover"
                 height={200}
@@ -309,7 +310,7 @@ export default function menupage() {
               </div>
             </div>
             <div className="relative flex flex-col items-start rounded-lg bg-white/80 p-4 backdrop-blur-lg transition-all hover:scale-105 hover:shadow-lg opacity-80">
-              <img
+              <Image
                 alt="Dish Image"
                 className="mb-4 w-full rounded-lg object-cover"
                 height={200}
@@ -336,7 +337,7 @@ export default function menupage() {
               </div>
             </div>
             <div className="relative flex flex-col items-start rounded-lg bg-white/80 p-4 backdrop-blur-lg transition-all hover:scale-105 hover:shadow-lg opacity-80">
-              <img
+              <Image
                 alt="Dish Image"
                 className="mb-4 w-full rounded-lg object-cover"
                 height={200}
@@ -362,7 +363,7 @@ export default function menupage() {
               </div>
             </div>
             <div className="relative flex flex-col items-start rounded-lg bg-white/80 p-4 backdrop-blur-lg transition-all hover:scale-105 hover:shadow-lg opacity-80">
-              <img
+              <Image
                 alt="Dish Image"
                 className="mb-4 w-full rounded-lg object-cover"
                 height={200}
@@ -388,7 +389,7 @@ export default function menupage() {
               </div>
             </div>
             <div className="relative flex flex-col items-start rounded-lg bg-white/80 p-4 backdrop-blur-lg transition-all hover:scale-105 hover:shadow-lg opacity-80">
-              <img
+              <Image
                 alt="Dish Image"
                 className="mb-4 w-full rounded-lg object-cover"
                 height={200}
@@ -414,7 +415,7 @@ export default function menupage() {
               </div>
             </div>
             <div className="relative flex flex-col items-start rounded-lg bg-white/80 p-4 backdrop-blur-lg transition-all hover:scale-105 hover:shadow-lg opacity-80">
-              <img
+              <Image
                 alt="Dish Image"
                 className="mb-4 w-full rounded-lg object-cover"
                 height={200}
@@ -440,7 +441,7 @@ export default function menupage() {
               </div>
             </div>
             <div className="relative flex flex-col items-start rounded-lg bg-white/80 p-4 backdrop-blur-lg transition-all hover:scale-105 hover:shadow-lg opacity-80">
-              <img
+              <Image
                 alt="Dish Image"
                 className="mb-4 w-full rounded-lg object-cover"
                 height={200}
