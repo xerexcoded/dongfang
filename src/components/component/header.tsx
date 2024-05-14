@@ -9,7 +9,7 @@ import { JSX, SVGProps } from "react"
 
 export default function header() {
   return (
-    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-gradient-to-tl from-amber-50 to-orange-100 ">
+    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-gradient-to-tl from-amber-50 to-orange-200 ">
       <Link className="mr-6 flex items-center" href="/">
         <DongfangLogo className="h-6 w-6" />
         <span className="sr-only">Dongfang</span>

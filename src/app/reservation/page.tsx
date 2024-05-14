@@ -4,6 +4,8 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { FormEvent, JSX, SVGProps } from "react"
+import Image from "next/image"
+import toast from "react-hot-toast"
 
 export default function reservation() {
 
@@ -29,10 +31,30 @@ export default function reservation() {
             });
 
             if (response.ok) {
-                alert('Reservation created successfully!');
+                toast.success('Your seats are reserved', {
+                    style: {
+                        border: '1px solid #713200',
+                        padding: '16px',
+                        color: '#713200',
+                    },
+                    iconTheme: {
+                        primary: '#713200',
+                        secondary: '#FFFAEE',
+                    },
+                });
                 // Reset form fields or redirect to a success page
             } else {
-                alert('An error occurred while creating the reservation.');
+                toast.error('An error occurred while creating the reservation.', {
+                    style: {
+                        border: '1px solid #713200',
+                        padding: '16px',
+                        color: '#713200',
+                    },
+                    iconTheme: {
+                        primary: '#713200',
+                        secondary: '#FFFAEE',
+                    },
+                });
             }
         } catch (error) {
             console.error('Error creating reservation:', error);
@@ -61,12 +83,12 @@ export default function reservation() {
                             Please note that we have a smart casual dress code, and we kindly request that you arrive on time for your
                             reservation. If you need to make any changes or have any special requests, please let us know in advance.
                         </p>
-                        <img
+                        <Image
                             alt="Reservation Process"
                             height={200}
                             src="https://images.unsplash.com/photo-1513781050488-6dd358209a1b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpbmVzZXxlbnwwfHwwfHx8MA%3D%3D"
                             style={{
-                                aspectRatio: "400/300",
+                                aspectRatio: "600/500",
                                 borderRadius: "1rem",
                                 display: "block",
                                 marginLeft: "auto",

@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import toast from 'react-hot-toast'
 const ApprovalPage = () => {
     const [reservationId, setReservationId] = useState('');
     const handleApprove = async () => {
@@ -14,7 +15,17 @@ const ApprovalPage = () => {
             });
 
             if (response.ok) {
-                console.log('Reservation approved successfully');
+                toast.success('Reservation approved successfully!', {
+                    style: {
+                        border: '1px solid #713200',
+                        padding: '16px',
+                        color: '#713200',
+                    },
+                    iconTheme: {
+                        primary: '#713200',
+                        secondary: '#FFFAEE',
+                    }
+                });
             } else {
                 console.error('Failed to approve reservation');
             }

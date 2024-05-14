@@ -162,6 +162,7 @@ export default function homepage() {
                 We are located <strong>near the Lausanne train station</strong>, just a short walk from the main entrance.
               </p>
             </div>
+
           </Card>
           <div className="w-full  h-[300px] rounded-lg overflow-hidden opacity-80">
             <Map /></div>

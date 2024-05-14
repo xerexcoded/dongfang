@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils"
 import Header from "@/components/component/header";
 import Footer from "@/components/component/footer";
+import { Toaster } from "react-hot-toast";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({
         "min-h-screen bg-background font-sans antialiased",
         fontSans.variable
       )}>
+        <Toaster position="bottom-center" reverseOrder={false} />
         <Header />
         {children}
         <Footer />
