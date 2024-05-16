@@ -65,7 +65,7 @@ export default function homepage() {
             alt="Gallery Image 3"
             className="rounded-lg opacity-80"
             height="200"
-            src="/homepage/4.png"
+            src="/homepage/4.PNG"
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
