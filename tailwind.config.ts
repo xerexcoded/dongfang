@@ -57,6 +57,7 @@ const config = {
         },
         'custom-red': '#E63946', // A vibrant red
         'custom-yellow': '#F1C40F', // A bright yellow
+        'custom-beige': '#FAF3EB',
       },
       borderRadius: {
         lg: "var(--radius)",

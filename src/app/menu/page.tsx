@@ -26,7 +26,7 @@ const menuItemsFromDB = async () => {
 export default async function menu() {
     const menuItems = await (await menuItemsFromDB()).json();
     return (
-        <div key="1" className="flex h-screen w-full flex-col bg-gradient-to-br from-amber-400 to-yellow-400">
+        <div key="1" className="flex h-screen w-full flex-col bg-custom-beige">
 
             <header className="flex h-16 items-center justify-between px-4 md:px-6">
                 <div className="flex items-center justify-center my-auto mx-auto"><span className="text-2xl font-bold">Our Menu</span></div>
@@ -38,7 +38,7 @@ export default async function menu() {
                                 <span className="sr-only">Toggle navigation menu</span>
                             </Button>
                         </SheetTrigger>
-                        <SheetContent className="opacity-80 bg-gradient-to-br rounded-lg from-amber-200 to-yellow-400" side="left">
+                        <SheetContent className="opacity-80  rounded-lgbg-custom-beige" side="left">
                             <div className="flex flex-col gap-4 border-r border-amber-900/20 bg-amber-900/10 p-6">
                                 <h2 className="text-xl font-bold text-amber-900">Filter Menu</h2>
                                 <div className="flex flex-col gap-2">
@@ -277,7 +277,7 @@ export default async function menu() {
                 <div className="flex-1 overflow-auto p-6">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                         {menuItems.map((item: MenuItem) => (
-                            <div key={item.id} className="relative flex flex-col items-start rounded-lg bg-white/80 p-4 backdrop-blur-lg transition-all hover:scale-105 hover:shadow-lg opacity-80">
+                            <div key={item.id} className="relative flex flex-col items-start rounded-lg bg-white/80 p-4 backdrop-blur-lg transition-all hover:text-slate-100 hover:scale-105 hover:shadow-lg hover:bg-red-500 opacity-80">
                                 <Image
                                     alt={item.name}
                                     className="mb-4 w-full rounded-lg object-cover"
@@ -291,13 +291,13 @@ export default async function menu() {
                                 />
                                 <div className="flex items-center gap-2">
                                     {/* Add appropriate icons based on dish type */}
-                                    <span className="text-sm font-medium text-gray-600">{item.dishType}</span>
+                                    <span className="text-sm font-medium text-gray-600 ">{item.dishType}</span>
                                 </div>
                                 <h3 className="mt-2 text-lg font-bold">{item.name}</h3>
                                 <p className="mt-2 text-gray-600">{item.ingredients}</p>
-                                <div className="mt-2 flex items-center gap-1">
+                                <div className="mt-2 flex items-center gap-1 hover:text-slate-50">
                                     {[...Array(item.spiceLevel)].map((_, index) => (
-                                        <LeafIcon key={index} className="h-4 w-4 text-red-500" />
+                                        <LeafIcon key={index} className="h-4 w-4 text-red-500 " />
                                     ))}
                                 </div>
                                 {/* Add price or any other relevant information */}

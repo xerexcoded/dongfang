@@ -9,62 +9,52 @@ import { JSX, SVGProps } from "react"
 
 export default function header() {
   return (
-    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-gradient-to-tl from-amber-50 to-orange-200 ">
-      <Link className="mr-6 flex items-center" href="/">
-        <DongfangLogo className="h-6 w-6" />
+    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 text-white bg-[#B73332]">
+      <Link className=" flex items-center" href="/">
+        <DongfangLogo className="h-36 w-36 " />
         <span className="sr-only">Dongfang</span>
       </Link>
-      <div className="flex w-full justify-center">
+      <h1 className=" text-center text-nowrap text-black text-2xl md:text-3xl hidden sm:block ">DONG FANG</h1>
+      <div className="flex w-full justify-end pr-8">
         <NavigationMenu className="hidden lg:flex">
           <NavigationMenuList>
             <NavigationMenuLink asChild>
               <Link
-                className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-amber px-4 py-2 text-sm font-medium transition-colors  hover:bg-amber-100 hover:text-amber-900 focus:bg-amber-100 focus:text-amber-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-amber-100/50 data-[state=open]:bg-amber-100/50 dark:bg-amber-950 dark:hover:bg-amber-800 dark:hover:text-amber-50 dark:focus:bg-amber-800 dark:focus:text-amber-50 dark:data-[active]:bg-amber-800/50 dark:data-[state=open]:bg-amber-800/50"
+                className="group inline-flex h-9 w-max items-center justify-center rounded-xl bg-slate px-4 py-2 text-sm font-medium transition-colors  hover:bg-black hover:text-white focus:bg-black focus:text-white"
                 href="/"
               >
                 Home
               </Link>
             </NavigationMenuLink>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-amber-50">Iconic Dishes</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div className="grid w-[400px] p-2">
-                  <NavigationMenuLink asChild>
-                    <Link
-                      className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-amber p-4 text-sm font-medium transition-colors hover:bg-amber-100 hover:text-amber-900 focus:bg-amber-100 focus:text-amber-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-amber-100/50 data-[state=open]:bg-amber-100/50 dark:bg-amber-950 dark:hover:bg-amber-800 dark:hover:text-amber-50 dark:focus:bg-amber-800 dark:focus:text-amber-50 dark:data-[active]:bg-amber-800/50 dark:data-[state=open]:bg-amber-800/50"
-                      href="#"
-                    >
-                      <div className="text-sm font-medium leading-none group-hover:underline">Signature Dish</div>
-                      <div className="line-clamp-2 text-sm leading-snug text-amber-500 dark:text-amber-400">
-                        Our famous signature dish.
-                      </div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-amber p-4 text-sm font-medium transition-colors hover:bg-amber-100 hover:text-amber-900 focus:bg-amber-100 focus:text-amber-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-amber-100/50 data-[state=open]:bg-amber-100/50 dark:bg-amber-950 dark:hover:bg-amber-800 dark:hover:text-amber-50 dark:focus:bg-amber-800 dark:focus:text-amber-50 dark:data-[active]:bg-amber-800/50 dark:data-[state=open]:bg-amber-800/50"
-                      href="#"
-                    >
-                      <div className="text-sm font-medium leading-none group-hover:underline">Chef&apos;s Special</div>
-                      <div className="line-clamp-2 text-sm leading-snug text-amber-500 dark:text-amber-400">
-                        A unique dish created by our talented chefs.
-                      </div>
-                    </Link>
-                  </NavigationMenuLink>
-                </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
             <NavigationMenuLink asChild>
               <Link
-                className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-amber-100 px-4 py-2 text-sm font-medium transition-colors hover:bg-amber-300 hover:text-amber-900 focus:bg-amber-100 focus:text-amber-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-amber-100/50 data-[state=open]:bg-amber-100/50 dark:bg-amber-950 dark:hover:bg-amber-800 dark:hover:text-amber-50 dark:focus:bg-amber-800 dark:focus:text-amber-50 dark:data-[active]:bg-amber-800/50 dark:data-[state=open]:bg-amber-800/50"
+                className="group inline-flex h-9 w-max items-center justify-center rounded-xl bg-slate px-4 py-2 text-sm font-medium transition-colors  hover:bg-black hover:text-white focus:bg-black focus:text-white"
+                href="/about"
+              >
+                About Us
+              </Link>
+            </NavigationMenuLink>
+
+            <NavigationMenuLink asChild>
+              <Link
+                className="group inline-flex h-9 w-max items-center justify-center rounded-xl  px-4 py-2 text-sm font-medium transition-colors hover:bg-black hover:text-white focus:focus:bg-black focus:text-white"
                 href="/menu"
               >
-                Menu
+                Special Menu
+              </Link>
+            </NavigationMenuLink>
+
+            <NavigationMenuLink asChild>
+              <Link
+                className="group inline-flex h-9 w-max items-center justify-center rounded-xl px-4 py-2 text-sm font-medium transition-colors hover:bg-black hover:text-white focus:focus:bg-black focus:text-white"
+                href="/menu"
+              >
+                Main Menu
               </Link>
             </NavigationMenuLink>
             <NavigationMenuLink asChild>
               <Link
-                className="group inline-flex h-9 w-max items-center justify-center rounded-md  bg-amber-100  px-4 py-2 text-sm font-medium transition-colors hover:bg-amber-300 hover:text-amber-900 focus:bg-amber-100 focus:text-amber-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-amber-100/50 data-[state=open]:bg-amber-100/50 dark:bg-amber-950 dark:hover:bg-amber-800 dark:hover:text-amber-50 dark:focus:bg-amber-800 dark:focus:text-amber-50 dark:data-[active]:bg-amber-800/50 dark:data-[state=open]:bg-amber-800/50"
+                className="group inline-flex h-9 w-max items-center justify-center rounded-xl  px-4 py-2 text-sm font-medium transition-colors hover:bg-black hover:text-white focus:focus:bg-black focus:text-white"
                 href="/reservation"
               >
                 Reservation
@@ -75,7 +65,7 @@ export default function header() {
       </div>
       <div className="ml-auto flex items-center gap-4">
         <Select>
-          <SelectTrigger className="text-sm font-semibold text-red-700 dark:text-amber-400 lg:ml-auto">
+          <SelectTrigger className="text-sm font-semibold bg-[#FAF3EB] text-red-700 dark:text-slate-400 lg:ml-auto">
             <SelectValue defaultValue="en" placeholder="English" />
           </SelectTrigger>
           <SelectContent>
@@ -86,12 +76,12 @@ export default function header() {
         </Select>
         <Sheet>
           <SheetTrigger asChild>
-            <Button className="lg:hidden" size="icon" variant="outline">
+            <Button className="lg:hidden text-black bg-[#FAF3EB]" size="icon" variant="outline">
               <MenuIcon className="h-6 w-6" />
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="left">
+          <SheetContent className="bg-[#FAF3EB]" side="left">
             <Link href="#">
               <DongfangLogo className="h-6 w-6" />
               <span className="sr-only">Dongfang</span>
@@ -100,30 +90,15 @@ export default function header() {
               <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/">
                 Home
               </Link>
-              <Collapsible className="grid gap-4">
-                <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
-                  Iconic Dishes
-                  <ChevronRightIcon className="ml-auto h-5 w-5 transition-all" />
-                </CollapsibleTrigger>
-                <CollapsibleContent>
-                  <div className="-mx-6 grid gap-6 bg-amber-100 p-6 dark:bg-amber-800">
-                    <Link className="group grid h-auto w-full justify-start gap-1" href="#">
-                      <div className="text-sm font-medium leading-none group-hover:underline">Signature Dish</div>
-                      <div className="line-clamp-2 text-sm leading-snug text-amber-500 dark:text-amber-400">
-                        Our famous signature dish.
-                      </div>
-                    </Link>
-                    <Link className="group grid h-auto w-full justify-start gap-1" href="#">
-                      <div className="text-sm font-medium leading-none group-hover:underline">Chef&apos;s Special</div>
-                      <div className="line-clamp-2 text-sm leading-snug text-amber-500 dark:text-amber-400">
-                        A unique dish created by our talented chefs.
-                      </div>
-                    </Link>
-                  </div>
-                </CollapsibleContent>
-              </Collapsible>
+              <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/about">
+                About Us
+              </Link>
               <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/menu">
-                Menu
+                Special Menu
+              </Link>
+
+              <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/menu">
+                Main Menu
               </Link>
               <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/reservation">
                 Reservation

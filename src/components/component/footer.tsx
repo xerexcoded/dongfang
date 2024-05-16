@@ -2,7 +2,7 @@ import Link from "next/link"
 import { JSX, SVGProps } from "react"
 export default function footer() {
   return (
-    <footer className="bg-gradient-to-br from-amber-200 to-orange-400 text-gray-900 py-8 md:py-12">
+    <footer className="bg-[#B73332] text-slate-200 py-8 md:py-12">
       <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center mb-4 md:mb-0">
           <Link className="flex items-center" href="#">
@@ -11,15 +11,15 @@ export default function footer() {
           </Link>
         </div>
         <div className="flex items-center space-x-4">
-          <Link className="text-amber-600 hover:text-amber-900" href="#">
+          <Link className="text-white hover:text-black" href="#">
             <FacebookIcon className="h-6 w-6" />
             <span className="sr-only">Facebook</span>
           </Link>
-          <Link className="text-amber-600 hover:text-amber-900" href="#">
+          <Link className="text-white hover:text-black" href="#">
             <InstagramIcon className="h-6 w-6" />
             <span className="sr-only">Instagram</span>
           </Link>
-          <Link className="text-amber-600 hover:text-amber-900" href="#">
+          <Link className="text-white hover:text-black" href="#">
             <TwitterIcon className="h-6 w-6" />
             <span className="sr-only">Twitter</span>
           </Link>

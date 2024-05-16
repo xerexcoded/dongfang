@@ -4,7 +4,6 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { FormEvent, JSX, SVGProps } from "react"
-import Image from "next/image"
 import toast from "react-hot-toast"
 
 export default function reservation() {
@@ -63,43 +62,23 @@ export default function reservation() {
     };
     return (
         <div
+            background-image="url('/homepage/1.jpg')"
             key="1"
-            className="flex flex-col md:flex-row justify-center items-center min-h-screen relative overflow-hidden bg-gradient-to-br from-amber-200 to-orange-400 p-8 gap-6 pt-24"
+            className="flex flex-col justify-center items-center min-h-screen relative overflow-hidden bg-custom-beige p-8 gap-6 pt-24"
         >
-            <div className="md:mr-2 w-full md:w-auto md:order-1">
-                <Card className="h-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md">
-                    <CardHeader>
-                        <CardTitle className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
-                            Reservation Process
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-sm md:text-base text-gray-700 dark:text-gray-300">
-                            After your reservation is confirmed, an email will be sent to you with the details. Our team will ensure
-                            that your table is ready and prepared for your arrival. We look forward to providing you with an
-                            exceptional dining experience.
-                        </p>
-                        <p className="text-sm md:text-base text-gray-700 dark:text-gray-300">
-                            Please note that we have a smart casual dress code, and we kindly request that you arrive on time for your
-                            reservation. If you need to make any changes or have any special requests, please let us know in advance.
-                        </p>
-                        <Image
-                            alt="Reservation Process"
-                            height={200}
-                            src="https://images.unsplash.com/photo-1513781050488-6dd358209a1b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpbmVzZXxlbnwwfHwwfHx8MA%3D%3D"
-                            style={{
-                                aspectRatio: "600/500",
-                                borderRadius: "1rem",
-                                display: "block",
-                                marginLeft: "auto",
-                                marginRight: "auto",
-                                objectFit: "cover",
-                                paddingTop: "1rem",
-                            }}
-                            width={300}
-                        />
-                    </CardContent>
-                </Card>
+            <div className="md:mr-2 w-full h-full md:w-auto md:order-1 mx-auto text-left pb-8">
+                <h1 className="text-lg h-full md:text-xl font-semibold text-red-900 dark:text-white" >Reservation Process</h1>
+
+                <p className="text-sm md:text-base text-gray-700 dark:text-gray-300">
+                    After your reservation is confirmed, an email will be sent to you with the details. Our team will ensure
+                    that your table is ready and prepared for your arrival. We look forward to providing you with an
+                    exceptional dining experience.
+                </p>
+                <p className="text-sm md:text-base text-gray-700 dark:text-gray-300">
+                    Please note that we have a smart casual dress code, and we kindly request that you arrive on time for your
+                    reservation. If you need to make any changes or have any special requests, please let us know in advance.
+                </p>
+
             </div>
             <div className="max-w-md w-full p-6 bg-white/30 dark:bg-gray-800/30 backdrop-blur-md rounded-lg shadow-md md:order-1 mb-8 md:mb-0">
                 <div className="text-center mb-6">
@@ -180,7 +159,7 @@ export default function reservation() {
                     </div>
                     <div />
                     <Button
-                        className="w-full bg-amber-900 text-white hover:bg-amber-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
+                        className="w-full bg-red-900 text-white hover:bg-red-800 "
                         type="submit"
                     >
                         Reserve
@@ -189,11 +168,11 @@ export default function reservation() {
                 <div className="mt-6 text-center">
                     <p className="text-gray-600 dark:text-gray-300">Contact us:</p>
                     <div className="flex justify-center gap-4">
-                        <a className="text-amber-900 hover:text-amber-700 dark:text-white dark:hover:text-gray-300" href="#">
+                        <a className="text-red-900 hover:text-red-700 dark:text-white dark:hover:text-gray-300" href="#">
                             <MailIcon className="w-6 h-6" />
                         </a>
                         <a
-                            className="text-amber-900 hover:text-amber-700 dark:text-white dark:hover:text-gray-300"
+                            className="text-red-900 hover:text-red-700 dark:text-white dark:hover:text-gray-300"
                             href="#"
                             rel="noopener noreferrer"
                             target="_blank"
