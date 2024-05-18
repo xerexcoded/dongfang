@@ -40,13 +40,13 @@ export default function homepage() {
             </Link>
           </Button>
         </div>
-        <div className="w-full flex md:w-3/5 p-6 overflow-hidden">
+        <div className="w-full md:w-3/5 p-6 overflow-hidden">
           <Image
             src="/home.jpg"
             width={800}
             height={450}
             alt="home"
-            className="opacity-30 "
+            className="opacity-40 "
           />
         </div>
       </section>
