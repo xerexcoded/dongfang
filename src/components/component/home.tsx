@@ -60,6 +60,7 @@ export default function homepage() {
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
+              borderRadius: "100px",
             }}
             width="300"
           />
@@ -70,6 +71,7 @@ export default function homepage() {
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
+              borderRadius: "100px",
             }}
             width="300"
           />
@@ -80,6 +82,7 @@ export default function homepage() {
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
+              borderRadius: "100px",
             }}
             width="300"
           />
@@ -90,6 +93,7 @@ export default function homepage() {
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
+              borderRadius: "100px",
             }}
             width="300"
           />
@@ -100,9 +104,54 @@ export default function homepage() {
             style={{
               aspectRatio: "300/200",
               objectFit: "cover",
+              borderRadius: "100px",
             }}
             width="300"
           />
+        </div>
+      </section>
+
+      <section className="px-4 py-12 bg-custom-beige mx-auto">
+        <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-6 mx-auto">
+          <div className=" h-[300px] overflow-hidden  mx-auto">
+            <img
+              alt="Our Story Image"
+              className=" h-full object-cover "
+              src="/homepage/1.jpg"
+            />
+          </div>
+          <div className="mx-auto">
+            <div className="bg-custom-beige xs:text-center sm:text-pretty lg:text-left  text-black  w-full">
+              <h1 className="text-3xl lg:text-4xl font-bold text-red-800 uppercase leading-tight mb-6">
+                We open every day for you
+              </h1>
+              <p className="font-medium mb-2">
+                Monday: 10 AM–2:30 PM, 6PM–10:30 PM
+              </p>
+              <p className="font-medium mb-2">
+                Tuesday: 10 AM–2:30 PM, 6PM–10:30 PM
+              </p>
+              <p className="font-medium mb-2">
+                Wednesday: 10 AM–2:30 PM, 6PM–10:30 PM
+              </p>
+              <p className="font-medium mb-2">
+                Thursday: 10 AM–2:30 PM, 6PM–10:30 PM
+              </p>
+              <p className="font-medium mb-2">
+                Friday: 10 AM–2:30 PM, 6PM–10:30 PM
+              </p>
+              <p className="font-medium mb-2">
+                Saturday: 10 AM–2:30 PM, 6PM–10:30 PM
+              </p>
+              <p className="font-medium mb-6">Sunday: 6PM–10:30 PM</p>
+              <div className="flex items-center mx-auto text-center">
+                <PhoneIcon className="text-black h-6 w-6 mr-2" />
+                <p className="font-medium ">
+                  Téléphone / WhatsApp: 021 312 70 30
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -115,10 +164,10 @@ export default function homepage() {
             <p className="text-center text-nowrap  pb-4">
               3 Minutes Walk From Lausanne Gare station.
             </p>
-            <div className="w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden opacity-80 my-auto">
+            <div className="w-full  rounded-lg overflow-hidden opacity-80 my-auto">
               <Map />
             </div>
-            <p className="text-center text-nowrap md:text-left text-xl md:text-2xl">
+            <p className="text-center text-nowrap pt-2 md:text-left text-xl md:text-2xl text-red-800">
               Av. de la Gare 20, 1003 Lausanne
             </p>
           </div>
@@ -209,6 +258,25 @@ function ArrowRightIcon(
     >
       <path d="M5 12h14" />
       <path d="m12 5 7 7-7 7" />
+    </svg>
+  );
+}
+
+function PhoneIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
     </svg>
   );
 }
