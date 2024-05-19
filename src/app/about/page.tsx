@@ -1,36 +1,56 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const about = () => {
-    return (
-        <section className="flex items-center px-8 py-12 min-h-screen bg-custom-beige">
+  return (
+    <div className="bg-custom-beige min-h-svh">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <h2 className="text-5xl font-bold uppercase text-red-700">
+              Our Story
+            </h2>
+            <p className="mt-2 text-xl">我们的故事...</p>
+            <Image
+              alt="Team photo"
+              className="mt-4 w-full max-w-md h-auto shadow-lg"
+              height="300"
+              src="/homepage/1.jpg"
+              style={{
+                aspectRatio: "450/300",
+                objectFit: "cover",
+              }}
+              width="450"
+            />
+          </div>
+          <div className="flex flex-col items-center md:items-end text-center md:text-right">
+            <h2 className="text-5xl flex flex-row font-bold text-red-700">
+              <Image
+                alt="Dong Fang Logo"
+                className="mr-2"
+                height={50}
+                src="/about/1.svg"
+                style={{
+                  aspectRatio: "16/9",
+                  objectFit: "cover",
+                }}
+                width={75}
+              />
+              Dong Fang
+            </h2>
+            <p className="mt-2 mb-4 text-xl">东方</p>
+            <p className="text-lg">
+              东方故事。在浓浓家乡情怀 Dong
+              Fang东方系列扎根浓浓中西文化融为一体，为客户带来一场浓郁中国正宗家庭的美食之旅。来自不同文化背景及出生地的创始者的中国家庭，告诉您真实东方故事一道菜。
+            </p>
+            <p className="text-lg mt-4">
+              东方厨房由来自正宗中国家庭的Jenny小姐创立，她有地球另的风味带到英土。Jenny的父亲道师中国，从上海携带的市场到四川省家的食谱，这些东西就是了她创造一个特殊地与异味意东家土祖传给的用料火烧。生东方，街道本纯粹于中国古董精选红木，为您带来东方的美食感受!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <h3 className="text-2xl font-bold text-red-700 mb-4"><img alt="Dong Fang Logo" className="h-8 inline " src="/dongfangLogo.svg" />Our Story</h3>
-                    <p className="text-lg text-gray-700 text-left">
-                        东方餐厅：在洛桑品味传统
-
-                        Dong Fang东方餐厅位于洛桑市中心和火车站附近，为您带来一场穿越中国正宗美食的舌尖之旅。我们的菜单为您呈现出传统与创新结合的中国菜肴，旨在让您尽情享受每一道佳肴。
-
-                        东方餐厅由热爱正宗中国美食的Jenny小姐创立，旨在将她家乡的风味带到瑞士。Jenny的足迹遍布中国，从上海繁华的市场到四川辛辣的美食，这些经历激发了她创造一个将传统与卓越烹饪技艺相结合的用餐体验。在东方，每道菜都体现了中国丰富的烹饪文化，为您带来难忘的美食冒险！
-                    </p>
-                    {/* <p className="text-lg text-gray-700 mt-4">
-                Over the years, Dong Fang has remained true to its roots, using traditional recipes and techniques passed
-                down through generations. Our chefs take pride in sourcing the freshest ingredients and carefully crafting
-                each dish with love and attention to detail.
-              </p>
-              <p className="text-lg text-gray-700 mt-4">
-                Today, Dong Fang is more than just a restaurant; it is a place where families and friends come together to
-                create lasting memories over delicious food and warm company. We invite you to experience the taste of
-                home in every dish and become a part of our story.
-              </p> */}
-                </div>
-                <div className=" h-[300px] overflow-hidden mx-auto">
-                    <img alt="Our Story Image" className=" h-full object-cover " src="/homepage/1.jpg" />
-                </div>
-            </div>
-        </section>
-    )
-}
-
-export default about
+export default about;
