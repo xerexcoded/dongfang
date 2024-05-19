@@ -201,6 +201,57 @@ export default function homepage() {
           </div>
         </div>
       </section>
+      <div
+        key="1"
+        className="bg-custom-beige p-4  grid grid-cols-1 md:grid-cols-3 gap-4"
+      >
+        <div className="flex flex-col text-left items-center p-4 border-4 border-red-800">
+          <span className=" text-2xl uppercase px-2 py-1 mb-4">
+            Nos réductions
+          </span>
+          <h2 className="md:text-2xl lg:text-4xl text-nowrap font-bold mb-4 text-red-700">
+            We Offer Discounts
+          </h2>
+          <p className="text-2xl">新年</p>
+          <Image
+            alt="Discount Image"
+            className="mt-4 bg-custom-beige"
+            height={400}
+            src="/homepage/8.png"
+            style={{
+              aspectRatio: "200/200",
+              objectFit: "cover",
+            }}
+            width={300}
+          />
+        </div>
+        <div>
+          <Image
+            alt="Birthday Discount"
+            className="object-cover mx-auto"
+            height={500}
+            src="/reservation/1.jpg"
+            style={{
+              aspectRatio: "500/500",
+              objectFit: "cover",
+            }}
+            width={500}
+          />
+        </div>
+        <div>
+          <Image
+            alt="Student Discount"
+            className="object-cover mx-auto"
+            height={500}
+            src="/reservation/2.jpg"
+            style={{
+              aspectRatio: "500/500",
+              objectFit: "cover",
+            }}
+            width={500}
+          />
+        </div>
+      </div>
       <section className="px-8 py-12 bg-custom-beige">
         <h3 className="text-2xl font-bold mb-4 text-center">
           What our patrons say
