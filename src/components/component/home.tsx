@@ -205,26 +205,22 @@ export default function homepage() {
         key="1"
         className="bg-custom-beige p-4  grid grid-cols-1 md:grid-cols-3 gap-4"
       >
-        <div className="flex flex-col text-left items-center p-4 border-4 border-red-800">
-          <span className=" text-2xl uppercase px-2 py-1 mb-4">
-            Nos réductions
-          </span>
-          <h2 className="md:text-2xl lg:text-4xl text-nowrap font-bold mb-4 text-red-700">
-            We Offer Discounts
-          </h2>
-          <p className="text-2xl">新年</p>
-          <Image
-            alt="Discount Image"
-            className="mt-4 bg-custom-beige"
-            height={400}
-            src="/homepage/8.png"
-            style={{
-              aspectRatio: "200/200",
-              objectFit: "cover",
-            }}
-            width={300}
-          />
+        <div className="flex flex-col min-h-min text-left items-center p-4 border-4  border-red-800 relative">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50 z-0"
+            style={{ backgroundImage: "url('/homepage/8.png')" }}
+          ></div>
+          <div className="relative flex flex-col items-center justify-center z-10 m-4 mx-auto">
+            <span className="text-3xl text-center uppercase px-2 py-1 mb-4 text-yellow-700 text-rose-900">
+              Nos réductions
+            </span>
+            <h2 className="text-3xl md:text-2xl lg:text-3xl text-nowrap font-bold mt-2 mb-4 text-red-700">
+              We Offer Discounts
+            </h2>
+            <p className="text-3xl md:text-2xl text-center">新年</p>
+          </div>
         </div>
+
         <div>
           <Image
             alt="Birthday Discount"
