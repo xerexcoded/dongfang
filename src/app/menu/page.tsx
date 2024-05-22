@@ -39,7 +39,7 @@ export default async function menu() {
               </Button>
             </SheetTrigger>
             <SheetContent
-              className="opacity-80  rounded-lgbg-custom-beige"
+              className="opacity-80  rounded-lg bg-custom-beige"
               side="left"
             >
               <div className="flex flex-col gap-4 border-r border-amber-900/20 bg-amber-900/10 p-6">
@@ -48,11 +48,11 @@ export default async function menu() {
                 </h2>
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center gap-2">
-                    <Checkbox id="vegetarian" />
+                    <Checkbox className="rounded-full" id="vegetarian" />
                     <Label htmlFor="vegetarian">Vegetarian</Label>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Checkbox id="non-vegetarian" />
+                    <Checkbox className="rounded-full" id="non-vegetarian" />
                     <Label htmlFor="non-vegetarian">Non-Vegetarian</Label>
                   </div>
                 </div>
@@ -67,31 +67,31 @@ export default async function menu() {
                   </h3>
                   <div className="grid grid-cols-2 gap-2">
                     <div className="flex items-center gap-2">
-                      <Checkbox id="beef" />
+                      <Checkbox className="rounded-full" id="beef" />
                       <Label htmlFor="beef">Beef</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="pork" />
+                      <Checkbox className="rounded-full" id="pork" />
                       <Label htmlFor="pork">Pork</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="chicken" />
+                      <Checkbox className="rounded-full" id="chicken" />
                       <Label htmlFor="chicken">Chicken</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="seafood" />
+                      <Checkbox className="rounded-full" id="seafood" />
                       <Label htmlFor="seafood">Seafood</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="vegetable" />
+                      <Checkbox className="rounded-full" id="vegetable" />
                       <Label htmlFor="vegetable">Vegetable</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="tofu" />
+                      <Checkbox className="rounded-full" id="tofu" />
                       <Label htmlFor="tofu">Tofu</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="lamb" />
+                      <Checkbox className="rounded-full" id="lamb" />
                       <Label htmlFor="lamb">Lamb</Label>
                     </div>
                   </div>
@@ -100,27 +100,27 @@ export default async function menu() {
                   <h3 className="text-lg font-bold text-amber-900">Type</h3>
                   <div className="grid grid-cols-2 gap-2">
                     <div className="flex items-center gap-2">
-                      <Checkbox id="soups" />
+                      <Checkbox className="rounded-full" id="soups" />
                       <Label htmlFor="soups">Soups</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="starter" />
+                      <Checkbox className="rounded-full" id="starter" />
                       <Label htmlFor="starter">Starter</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="mains" />
+                      <Checkbox className="rounded-full" id="mains" />
                       <Label htmlFor="mains">Mains</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="noodles" />
+                      <Checkbox className="rounded-full" id="noodles" />
                       <Label htmlFor="noodles">Noodles</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="desserts" />
+                      <Checkbox className="rounded-full" id="desserts" />
                       <Label htmlFor="desserts">Desserts</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="drinks" />
+                      <Checkbox className="rounded-full" id="drinks" />
                       <Label htmlFor="drinks">Drinks</Label>
                     </div>
                   </div>
@@ -129,35 +129,35 @@ export default async function menu() {
                   <h3 className="text-lg font-bold text-amber-900">Region</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="flex items-center gap-2">
-                      <Checkbox id="anhui" />
+                      <Checkbox className="rounded-full" id="anhui" />
                       <Label htmlFor="anhui">Anhui</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="fujian" />
+                      <Checkbox className="rounded-full" id="fujian" />
                       <Label htmlFor="fujian">Fujian</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="guangdong" />
+                      <Checkbox className="rounded-full" id="guangdong" />
                       <Label htmlFor="guangdong">Guangdong</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="hunan" />
+                      <Checkbox className="rounded-full" id="hunan" />
                       <Label htmlFor="hunan">Hunan</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="jiangsu" />
+                      <Checkbox className="rounded-full" id="jiangsu" />
                       <Label htmlFor="jiangsu">Jiangsu</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="shandong" />
+                      <Checkbox className="rounded-full" id="shandong" />
                       <Label htmlFor="shandong">Shandong</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="sichuan" />
+                      <Checkbox className="rounded-full" id="sichuan" />
                       <Label htmlFor="sichuan">Sichuan</Label>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Checkbox id="zhejiang" />
+                      <Checkbox className="rounded-full" id="zhejiang" />
                       <Label htmlFor="zhejiang">Zhejiang</Label>
                     </div>
                   </div>
@@ -172,11 +172,11 @@ export default async function menu() {
           <h2 className="text-xl font-bold text-amber-900">Filter Menu</h2>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2">
-              <Checkbox id="vegetarian" />
+              <Checkbox className="rounded-full" id="vegetarian" />
               <Label htmlFor="vegetarian">Vegetarian</Label>
             </div>
             <div className="flex items-center gap-2">
-              <Checkbox id="non-vegetarian" />
+              <Checkbox className="rounded-full" id="non-vegetarian" />
               <Label htmlFor="non-vegetarian">Non-Vegetarian</Label>
             </div>
           </div>
@@ -187,31 +187,31 @@ export default async function menu() {
             <h3 className="text-lg font-bold text-amber-900">Ingredients</h3>
             <div className="grid grid-cols-2 gap-2">
               <div className="flex items-center gap-2">
-                <Checkbox id="beef" />
+                <Checkbox className="rounded-full" id="beef" />
                 <Label htmlFor="beef">Beef</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="pork" />
+                <Checkbox className="rounded-full" id="pork" />
                 <Label htmlFor="pork">Pork</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="chicken" />
+                <Checkbox className="rounded-full" id="chicken" />
                 <Label htmlFor="chicken">Chicken</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="seafood" />
+                <Checkbox className="rounded-full" id="seafood" />
                 <Label htmlFor="seafood">Seafood</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="vegetable" />
+                <Checkbox className="rounded-full" id="vegetable" />
                 <Label htmlFor="vegetable">Vegetable</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="tofu" />
+                <Checkbox className="rounded-full" id="tofu" />
                 <Label htmlFor="tofu">Tofu</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="lamb" />
+                <Checkbox className="rounded-full" id="lamb" />
                 <Label htmlFor="lamb">Lamb</Label>
               </div>
             </div>
@@ -220,27 +220,27 @@ export default async function menu() {
             <h3 className="text-lg font-bold text-amber-900">Type</h3>
             <div className="grid grid-cols-2 gap-2">
               <div className="flex items-center gap-2">
-                <Checkbox id="soups" />
+                <Checkbox className="rounded-full" id="soups" />
                 <Label htmlFor="soups">Soups</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="starter" />
+                <Checkbox className="rounded-full" id="starter" />
                 <Label htmlFor="starter">Starter</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="mains" />
+                <Checkbox className="rounded-full" id="mains" />
                 <Label htmlFor="mains">Mains</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="noodles" />
+                <Checkbox className="rounded-full" id="noodles" />
                 <Label htmlFor="noodles">Noodles</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="desserts" />
+                <Checkbox className="rounded-full" id="desserts" />
                 <Label htmlFor="desserts">Desserts</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="drinks" />
+                <Checkbox className="rounded-full" id="drinks" />
                 <Label htmlFor="drinks">Drinks</Label>
               </div>
             </div>
@@ -249,35 +249,35 @@ export default async function menu() {
             <h3 className="text-lg font-bold text-amber-900">Region</h3>
             <div className="grid grid-cols-2 gap-2">
               <div className="flex items-center gap-2">
-                <Checkbox id="anhui" />
+                <Checkbox className="rounded-full" id="anhui" />
                 <Label htmlFor="anhui">Anhui</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="fujian" />
+                <Checkbox className="rounded-full" id="fujian" />
                 <Label htmlFor="fujian">Fujian</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="guangdong" />
+                <Checkbox className="rounded-full" id="guangdong" />
                 <Label htmlFor="guangdong">Guangdong</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="hunan" />
+                <Checkbox className="rounded-full" id="hunan" />
                 <Label htmlFor="hunan">Hunan</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="jiangsu" />
+                <Checkbox className="rounded-full" id="jiangsu" />
                 <Label htmlFor="jiangsu">Jiangsu</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="shandong" />
+                <Checkbox className="rounded-full" id="shandong" />
                 <Label htmlFor="shandong">Shandong</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="sichuan" />
+                <Checkbox className="rounded-full" id="sichuan" />
                 <Label htmlFor="sichuan">Sichuan</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Checkbox id="zhejiang" />
+                <Checkbox className="rounded-full" id="zhejiang" />
                 <Label htmlFor="zhejiang">Zhejiang</Label>
               </div>
             </div>
