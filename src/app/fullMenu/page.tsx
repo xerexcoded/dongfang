@@ -35,7 +35,12 @@ const FullMenu = () => {
           <iframe
             src={pdfSrc}
             className="w-full h-full border-none"
-            style={{ height: "calc(100vh - 150px)" }}
+            style={{
+              height: "calc(100vh - 150px)",
+              overflow: "hidden",
+              transform: "scale(1)",
+              transformOrigin: "top left",
+            }}
           ></iframe>
         )}
       </div>
