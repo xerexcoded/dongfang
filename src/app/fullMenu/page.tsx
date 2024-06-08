@@ -2,40 +2,40 @@
 import React, { useState } from "react";
 
 const FullMenu = () => {
-  const [pdfSrc, setPdfSrc] = useState("/FullMenu/FullMenu.pdf");
+  const [pdfSrc, setPdfSrc] = useState("/fullMenu/fullMenu.pdf");
 
   const showPDF = (pdf: React.SetStateAction<string>) => {
     setPdfSrc(pdf);
   };
+
   return (
-    <div className="flex flex-col items-center  min-h-screen bg-custom-beige">
+    <div className="flex flex-col items-center min-h-screen bg-custom-beige p-4">
       <div className="mt-10 px-2 flex space-x-4 mx-auto">
         <button
-          className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-700"
-          onClick={() => showPDF("/FullMenu/FullMenu.pdf")}
+          className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800"
+          onClick={() => showPDF("/fullMenu/fullMenu.pdf")}
         >
           Chinese Menu
         </button>
         <button
-          className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-700"
-          onClick={() => showPDF("/FullMenu/FullMenu.pdf")}
+          className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800"
+          onClick={() => showPDF("/fullMenu/fullMenu.pdf")}
         >
           French Menu
         </button>
         <button
-          className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-700"
-          onClick={() => showPDF("/FullMenu/FullMenu.pdf")}
+          className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800"
+          onClick={() => showPDF("/fullMenu/fullMenu.pdf")}
         >
           English Menu
         </button>
       </div>
-      <div className="mt-10 w-4/5 md:h-[70vh] h-[50vh] border-2 border-red-600 shadow-md">
+      <div className="mt-10 w-full flex-grow border-2 border-red-600 shadow-md">
         {pdfSrc && (
           <iframe
             src={pdfSrc}
-            width="100%"
-            height="100%"
-            className="border-none"
+            className="w-full h-full border-none"
+            style={{ height: "calc(100vh - 150px)" }}
           ></iframe>
         )}
       </div>
