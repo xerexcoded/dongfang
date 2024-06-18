@@ -16,7 +16,7 @@ export default function homepage() {
         }}
       >
         <div className="w-full md:w-2/5 p-6">
-          <h1 className="text-4xl sm:text-2xl font-bold  mb-4">
+          <h1 className="text-5xl sm:text-2xl font-bold  mb-4">
             <p className="text-red-700 text-pretty">
               Authentic Chinese Cuisine
             </p>{" "}
